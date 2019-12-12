@@ -57,6 +57,15 @@
 	    justify-content: center;
 	    font-size: 30px;
 	}
+	.searchContent.anketa  .infoBySearch .shownInfo p{
+    width: 30%;
+    max-width: 30%;
+}
+
+.searchContent.anketa  .infoBySearch .buttonsForMore button {
+    width: 30%;
+        max-width: 30%;
+}
 }
 @media  screen and (max-width: 1050px){
 	.homeSection .formForSearch form{
@@ -102,6 +111,8 @@
 	.aboutContent img {
     width: 300px;
 }
+
+
 }
 @media  screen and (max-width: 1000px) {
 	.homeSection.aboutUs .linksNumbered {

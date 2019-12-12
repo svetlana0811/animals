@@ -526,3 +526,142 @@ position: fixed;
     border-radius: 50px;
     padding-left: 20px;
 }
+ .popupForLogin.tesnelXnamoghin .centerDiv .infoSections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .popupForLogin.tesnelXnamoghin .centerDiv {
+
+        max-width: 1280px;
+}
+.popupForLogin.tesnelXnamoghin .centerDiv .loginInputs {
+       width: 50%;
+    margin: 0px auto;
+    padding: 10px;
+}
+.popupForLogin.tesnelXnamoghin .centerDiv .title {
+    width: 50%;
+}
+.popupForLogin.tesnelXnamoghin .centerDiv .border {
+    width: 45%;
+}
+.popupForLogin.tesnelXnamoghin .centerDiv .loginButton {
+    
+    width: 100%;
+}
+.popupForLogin.tesnelXnamoghin .centerDiv input {
+   background-image: url(../images/pencil-edit-button.png);
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-position: right 20px top 20px;
+    background-size: 20px;
+}
+ .popupForLogin.tesnelGtnveluvayr .centerDiv .infoSections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .popupForLogin.tesnelGtnveluvayr .centerDiv {
+
+        max-width: 1280px;
+}
+.popupForLogin.tesnelGtnveluvayr .centerDiv .loginInputs {
+       width: 50%;
+    margin: 0px auto;
+    padding: 10px;
+}
+.popupForLogin.tesnelGtnveluvayr .centerDiv .title {
+    width: 50%;
+}
+.popupForLogin.tesnelGtnveluvayr .centerDiv .border {
+    width: 45%;
+}
+.popupForLogin.tesnelGtnveluvayr .centerDiv .loginButton {
+    width: 100%;
+}
+.popupForLogin.tesnelGtnveluvayr .centerDiv input {
+   background-image: url(../images/pencil-edit-button.png);
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-position: right 20px top 20px;
+    background-size: 20px;
+}
+.searchContent.anketa .avatarAndName {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 100px;
+}
+.searchContent.anketa .avatarAndName .name {
+    width: max-content;
+    text-align: center;
+}
+.searchContent.anketa .avatarAndName .name p {
+    width: max-content;
+    margin: 20px;
+    border: none;
+    border-radius: inherit;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    border-bottom: 2px solid;
+}
+.searchContent.anketa  .infoBySearch .shownInfo p{
+    width: 30%;
+    max-width: 30%;
+}
+.searchContent.anketa  .infoBySearch .shownInfo , .searchContent.anketa .infoBySearch .buttonsForMore{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.searchContent.anketa  .infoBySearch .buttonsForMore button {
+    width: 30%;
+    max-width: 30%;
+}
+.searchContent.anketa .avatarAndName .avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.searchContent.anketa  .customSelect{
+        width: 30%;
+        margin: 12px;
+}
+.searchContent.anketa  .customSelect .hidden{
+        display: none;
+}
+.searchContent.anketa .infoBySearch .shownInfo  .customSelect p{
+      width: 100%;
+    max-width: 100%;
+    margin: 0
+}
+.searchContent.anketa .infoBySearch .shownInfo  .customSelect .selectText{
+        padding: 0 0;
+}
+.searchContent.anketa .infoBySearch .shownInfo .customSelect .selectText> p:after{
+    right: 9px;
+}
+.searchContent.anketa .infoBySearch .shownInfo .customSelect ul li {
+    width: 100%;
+    padding-left: 20px;
+}
+.searchContent.anketa .infoBySearch .shownInfo .customSelect ul li.selected:before {
+       left: 5px;
+}
+.searchContent.anketa .infoBySearch .shownInfo >input {
+     width: 30%;
+    margin: 12px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50px;
+    padding-left: 15px;
+}
