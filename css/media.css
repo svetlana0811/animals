@@ -20,10 +20,45 @@
 	    border-bottom: 3px solid;
 	}
 	.customSelect ul li {
-    width: 100%;
+	    width: 100%;
+	}
+	.searchContent .infoBySearch .shownInfo p {
+	    max-width: 250px;
+	    margin: 12px;
+	    height: 48px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    border: 1px solid;
+	    border-radius: 50px;
+	    padding-left: 15px;
+	}
+	.searchContent .infoBySearch .buttonsForMore button {
+	    max-width: 250px;
+	    margin: 12px;
+	    height: 58px;
+	    display: flex;
+	    justify-content: center;
+	    border: 1px solid;
+	    border-radius: 50px;
+	    color: white;
+	    background: #282E2D;
+	    font-size: 16px;
+	    text-align: center;
+	}
+	.searchContent .avatarAndName .name p {
+	    width: 250px;
+	    margin: 20px auto;
+	    border: 1px solid;
+	    border-radius: 50px;
+	    height: 44px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    font-size: 30px;
+	}
 }
-}
-@media  screen and (max-width: 1000px){
+@media  screen and (max-width: 1050px){
 	.homeSection .formForSearch form{
    	    width: 500px;
    }
@@ -53,9 +88,34 @@
 	.customSelect ul li {
 		    font-size: 17px;
 	}
-
+	
+	.aboutContent {
+	    padding-left:  0px;
+	    height: 90%;
+	    overflow-y: auto;
+        padding-right: 10px;
+	    padding-bottom: 50px;
+	}
+	.homeSection.aboutUs {
+	    justify-content: flex-start;
+	}
+	.aboutContent img {
+    width: 300px;
 }
-@media  screen and (max-width: 950px) {
+}
+@media  screen and (max-width: 1000px) {
+	.homeSection.aboutUs .linksNumbered {
+	    width: 80%;
+
+	    left: 10%;
+	    text-align: center;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    bottom: 0;
+	    top: auto;
+	    height: max-content;
+	}
    .menuPart .navigationPart ul {
 	  	display: flex;
 	    flex-wrap: wrap;
@@ -92,26 +152,41 @@
 		display: none;
 	}
 	.notLinkButton {
-    width: 38px;
-    height: 10px;
-}
-.homeSection .linksNumbered .item {
-    margin-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.fullContent{
-	background: url(../images/mobile/dogmobile.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.homeSection .formForSearch form {
-    width: 90%;
-    margin: 20px auto;
-}
+	    width: 38px;
+	    height: 10px;
+	}
+	.homeSection .linksNumbered .item {
+	    margin-bottom: 16px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+	}
+	.fullContent{
+		background: url(../images/mobile/dogmobile.png) no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+	.homeSection .formForSearch form {
+	    width: 90%;
+	    margin: 20px auto;
+	}
+	.homeSection .linksNumbered .item.active {
+	    margin-bottom: 0px;
+	    margin-left: 5px;
+	}
+	.searchContent .infoBySearch .buttonsForMore button{
+		font-size: 13px;
+	}
+	.searchContent .infoBySearch .shownInfo p{
+		font-size: 14px;
+	}
+	.searchContent .infoBySearch .shownInfo p , .searchContent .infoBySearch .buttonsForMore button {
+	    width: 80%;
+	    max-width: 80%
+	}
 }
 @media  screen and (max-width: 700px)  {
+	
 	.customSelect {
 	    width: 100%;
 	    position: relative;
@@ -153,11 +228,25 @@
 		width: 90%;
 	}
 	.popupForLogin .centerDiv .title {
-    width: 40%;
-    font-size: 14px;
-}
-.popupForLogin .centerDiv .border {
-    width: 55%;}
+	    width: 40%;
+	    font-size: 14px;
+	}
+	.popupForLogin .centerDiv .border {
+	    width: 55%;
+	}
+	.aboutContent img {
+	    width: 250px;
+	}
+	.contentInfo p {
+		font-size:  14px;
+	}
+	.searchContent .avatarAndName .avatar {
+	    width: 121px;
+	    height: 121px;
+    }
+    .searchContent .infoBySearch {
+	    margin-top: 30px;
+	}
 }
 @media  screen and (max-width: 500px) {
 	.homeSection .formForSearch form {
@@ -171,4 +260,17 @@
 	    border-radius: 20px;
 	    padding: 10px;
 	}
+	.aboutContent img {
+	    width: 200px;
+	}
+	.searchContent .infoBySearch .shownInfo p, .searchContent .infoBySearch .buttonsForMore button {
+	    width: 100%;
+	    max-width: 100%;
+	}
+	.searchContent .avatarAndName .name p{
+		font-size: 26px;
+	}
+	.backgroundedDiv {
+    padding: 0;
+}
 }
