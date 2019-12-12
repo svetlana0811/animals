@@ -1,0 +1,174 @@
+@media  screen and (max-width: 1360px) {
+   .homeSection .formForSearch form{
+   	    width: 700px;
+   }
+   .homeSection .linksNumbered .item .number {
+	    font-size: 70px;
+	}
+	.homeSection .linksNumbered {
+	    left: -110px;
+	}
+	.menuPart .navigationPart ul li {
+	    font-size: 21px;
+	    margin-right: 8px;
+	    padding: 10px;
+	}
+	.menuPart .navigationPart ul li.logInButton{
+	    margin-top: 0;
+	}
+	.homeSection .linksNumbered .item .text span {
+	    border-bottom: 3px solid;
+	}
+	.customSelect ul li {
+    width: 100%;
+}
+}
+@media  screen and (max-width: 1000px){
+	.homeSection .formForSearch form{
+   	    width: 500px;
+   }
+    .homeSection .linksNumbered .item .number {
+	    font-size: 60px;
+	}
+	.homeSection .linksNumbered {
+	    left: -100px;
+	}
+	.notLinkButton {
+	    width: 9px;
+	    height: 40px;
+	}
+	.menuPart .navigationPart ul li {
+	    font-size: 17px;
+	    margin-right: 0px;
+	    padding: 10px;
+	}
+	.menuPart .navigationPart ul li.logInButton{
+	    width: 140px;
+        margin-top: 2px;
+        height: 37px;
+	}
+	.customSelect .selectText {
+		padding: 0 24px;
+	}
+	.customSelect ul li {
+		    font-size: 17px;
+	}
+
+}
+@media  screen and (max-width: 950px) {
+   .menuPart .navigationPart ul {
+	  	display: flex;
+	    flex-wrap: wrap;
+	    justify-content: flex-end;
+	}
+	.menuPart .navigationPart ul li {
+	    font-size: 17px;
+	    margin-right: 0px;
+        width: 100%;
+	    padding: 10px 0;
+	}
+	.menuPart {
+		width: 250px;
+	}
+	.homeSection {
+	    display: flex;
+	    position: relative;
+	    flex-direction: column;
+	    justify-content: center;
+	    margin-top: 0;
+	    height: 80%;
+	}
+	.homeSection .linksNumbered {
+	    width: 80%;
+    left: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    top: auto;
+    height: max-content;
+	}
+	.homeSection .linksNumbered .item .text {
+		display: none;
+	}
+	.notLinkButton {
+    width: 38px;
+    height: 10px;
+}
+.homeSection .linksNumbered .item {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.fullContent{
+	background: url(../images/mobile/dogmobile.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.homeSection .formForSearch form {
+    width: 90%;
+    margin: 20px auto;
+}
+}
+@media  screen and (max-width: 700px)  {
+	.customSelect {
+	    width: 100%;
+	    position: relative;
+        height: 80px;
+	}
+	.header .logoPart img {
+	    width: 90px;
+	}
+	.menuPart .navigationPart ul li {
+	    font-size: 12px;
+	    
+	}
+	.menuPart .navigationPart ul {
+	    margin-top: 20px;
+	}
+	.menuPart .navigationPart ul li.logInButton {
+	    width: 110px;
+	    margin-top: 2px;
+	    height: 30px;
+	    font-size: 12px;
+	}
+	.homeSection .formForSearch>h1 {
+	    font-weight: 100;
+	    font-size: 23px;
+	    width: 90%;
+	    margin: 0 auto;
+	}
+	.searchInput span img{
+	    width: 20px;
+	        margin-top: 7px;
+	}
+	.backgroundedDiv {
+	    padding: 22px;
+	}
+	.searchInput {
+	    height: 51px;
+	}
+	.popupForLogin .centerDiv .loginInputs {
+		width: 90%;
+	}
+	.popupForLogin .centerDiv .title {
+    width: 40%;
+    font-size: 14px;
+}
+.popupForLogin .centerDiv .border {
+    width: 55%;}
+}
+@media  screen and (max-width: 500px) {
+	.homeSection .formForSearch form {
+	    width: 100%;
+	    margin: 20px auto;
+	}
+	.menuPart {
+    	width: 140px;
+	}
+	.popupForLogin .centerDiv {
+	    border-radius: 20px;
+	    padding: 10px;
+	}
+}

@@ -1,0 +1,421 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+/*@import url("nice-select.css");*/
+
+/*@import url("media/media.css");*/
+
+*, *:after, *:before { 
+    -webkit-box-sizing: inherit;
+     box-sizing: inherit; 
+       outline: 0;
+       margin: 0;
+    padding: 0;
+    color: inherit;
+ }
+
+@font-face {
+  font-family: MontserratarmRegular;
+  src: url(../fonts/Montserratarm-Regular.otf);
+}
+
+@font-face {
+  font-family: Robotoregular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
+html * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+  
+    font-family: MontserratarmRegular;
+} 
+ul ,  li {
+    list-style: none;
+} 
+ 
+a {
+    text-decoration: none;
+    color: inherit;
+}  
+:root {
+
+    --white: #FFFFFF;
+    --dark-text: #282E2D;
+    --silver-medium: #00000029;
+    --silver-dark: #656D6B;
+    --black: #000000;
+
+}
+*::-moz-selection {
+    background-color: #282E2D;
+    /*user-select: none;*/
+    color: snow;
+
+}
+
+*::selection {
+    background-color: #282E2D;
+    /*user-select: none;*/
+    color: snow;
+
+}
+ 
+.myContainer {
+    width: 90%;
+    max-width: 1633px;
+    margin: 0 auto;
+}
+  .fullContent {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/dog.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .backgroundedDiv {
+    height: 90vh;
+    background-color: rgba(40, 46, 45, 0.4);
+        border-radius: 30px;
+    padding: 22px 50px 22px 70px;
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white
+  }
+  .header .logoPart{
+    
+  }
+  .header .logoPart img{
+    
+  }
+  .menuPart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 80%;
+    text-align: right;
+  }
+  .menuPart .languagePart{
+    width: 100%;
+  }
+  .menuPart .languagePart a{
+    
+  }
+  .menuPart .languagePart span{
+    
+  }
+  .menuPart .navigationPart{
+    
+  }
+  .menuPart .navigationPart ul{
+    display: flex;
+  }
+  .menuPart .navigationPart ul li{
+   font-size: 25px;
+    margin-right: 10px;
+    padding: 13px;
+  }
+  .menuPart .navigationPart ul li:last-child{
+    margin-right: 0px;
+  }
+  .menuPart .navigationPart ul li.logInButton{
+    width: 182px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 47px;
+    cursor: pointer;
+    margin-top: 4px;
+  } 
+  .homeSection {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-top: 150px;
+  }
+  .homeSection .linksNumbered{
+    position: absolute;
+    left: -120px;
+    top: 0;
+    color: white;
+  }
+  .homeSection .linksNumbered .item.active{
+    margin-bottom: 0px;
+  }
+  .homeSection .linksNumbered .item.active a{
+    display: flex;
+  }
+  .homeSection .linksNumbered .item{
+    margin-bottom: 23px;
+  }
+  .homeSection .linksNumbered .item .number{
+    font-family: Robotoregular;
+    font-size: 90px;
+  }
+  .notLinkButton a {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .notLinkButton {
+    width: 11px;
+    height: 45px;
+    background: white;
+    border-radius: 30px;
+    margin-left: 10px;
+    position: relative;
+  }
+  .homeSection .linksNumbered .item .text span {
+    border-bottom: 5px solid;
+    padding-bottom: 5px;
+  }
+  .homeSection .linksNumbered .item .text{
+    padding-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .homeSection .formForSearch{
+    color: white;
+  }
+  .homeSection .formForSearch>h1{
+    font-weight: 100;
+  }
+  .homeSection .formForSearch form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+        width: 800px;
+  }
+  .homeSection .formForSearch form .hidden{
+    width: 0;
+    height: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+  .customSelect ul li.selected:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+    left: -10px;
+    top: 13px;
+  }
+  .customSelect ul li {
+    padding: 5px;
+    position: relative;
+    font-size: 23px;
+    width: 80%;
+    cursor: pointer;
+  }
+  .customSelect ul{
+    display: none;
+    padding-bottom: 20px;
+  }
+  .customSelect .selectText> p:after {
+    content: "";
+    position: absolute;
+    right: -11px;
+    width: 0;
+    height: 0;
+    top: 22px;
+    border-top: solid 8px #242424;
+    border-left: solid 8px transparent;
+    border-right: solid 8px transparent;
+}
+.searchInput span{
+    cursor: pointer;
+
+}
+  .customSelect .selectText> p {
+        padding: 16px 0;
+        cursor: pointer;
+        color: #656D6B;
+        position: relative;
+  }
+  .customSelect {
+        width: 47%;
+        position: relative;
+  }
+    .customSelect ul.show{
+        display: block;
+    }
+  .customSelect .selectText.openItems {
+    border-radius: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 10px grey;
+  }
+  .customSelect .selectText {
+    position: relative;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    padding: 0 44px;
+  }
+
+  .customSelect .selectText>p{
+    
+  }
+  .searchInput {
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+     border-radius: 50px;
+    padding: 8px 30px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchInput input{
+    height: 100%;
+    width: 90%;
+    color: #656D6B;
+    border: none;
+  } 
+  .popupForLogin {
+position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+  }
+  .popupForLogin .popupContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .popupForLogin .centerDiv{
+   width: 95%;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 30px;
+    height: 80vh;
+    max-height: 500px;
+    background: rgba(40, 46, 45, 0.95);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .popupForLogin .centerDiv input {
+    padding: 20px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    margin-top: 5px;
+  }
+  .popupForLogin .centerDiv .loginInputs{
+    width: 500px;
+    margin: 20px auto;
+  }
+  .popupForLogin .centerDiv .loginInputs>div{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .popupForLogin .centerDiv .title{
+        width: 30%;
+  }
+  .popupForLogin .centerDiv .border{
+    width: 65%;
+    border: 0.5px solid;
+    height: 0;
+    margin-top: 10px;
+  }
+  .popupForLogin .centerDiv .loginButton{
+    display: flex;
+    justify-content: center;
+        margin-top: 20px;
+  }
+  .popupForLogin .centerDiv .loginButton button{
+    width: 210px;
+    height: 55px;
+    border-radius: 30px;
+    background: #262C2B;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .closeModal img {
+        width: 33px;
+  }
+  .closeModal {
+    width: max-content;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .loggedIn.show{
+    display: flex;
+  }
+  .loggedIn {
+    display: none;
+  }
+  .loggedIn a{
+     border-bottom: 1px solid;
+    height: max-content;
+    margin: 1px 0px 3px 5px;
+  }
+  .loggedIn  .avatar{
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  /*about us*/
+.fullContent.aboutUs {
+    background: url(../images/bytes.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+.backgroundedDiv.aboutUs{
+    background: transparent;
+}
+.homeSection.aboutUs {
+    margin-top: 0;
+        height: 100%;
+}
+.homeSection.aboutUs .linksNumbered {
+       color: black; 
+           left: -120px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 25%;
+}
+.homeSection.aboutUs  .notLinkButton {
+       background: black; 
+
+}
