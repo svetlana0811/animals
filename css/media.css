@@ -1,13 +1,37 @@
-@media  screen and (max-width: 1360px) {
+@media  screen and (max-width: 1650px) {
+	.homeSection .linksNumbered .item .number {
+	    font-family: Robotoregular;
+	    font-size: 70px;
+	}
+	.homeSection .linksNumbered .item .text span {
+    border-bottom: 3px solid  ;
+    padding-bottom: 5px;
+}
+.homeSection .linksNumbered .item .text {
+    padding-bottom: 19px;
+    font-size: 14px;
+}
+.aboutContent img {
+    float: right;
+    padding: 0 0 10px 10px;
+    max-width: 42%;
+}
+}
+@media  screen and (max-width: 1370px) {
+	.fullContent.home .backgroundedDiv {
+		width: 80%;
+	}
+	.searchContent.search .infoBySearch .shownInfo p, .searchContent.search .infoBySearch .buttonsForMore button {
+		width: 80%;
+		max-width: 80%;
+	}
    .homeSection .formForSearch form{
    	    width: 700px;
    }
    .homeSection .linksNumbered .item .number {
 	    font-size: 70px;
 	}
-	.homeSection .linksNumbered {
-	    left: -110px;
-	}
+	 
 	.menuPart .navigationPart ul li {
 	    font-size: 21px;
 	    margin-right: 8px;
@@ -17,7 +41,7 @@
 	    margin-top: 0;
 	}
 	.homeSection .linksNumbered .item .text span {
-	    border-bottom: 3px solid;
+	    border-bottom: 3px solid  ;
 	}
 	.customSelect ul li {
 	    width: 100%;
@@ -29,7 +53,7 @@
 	    display: flex;
 	    flex-direction: column;
 	    justify-content: center;
-	    border: 1px solid;
+	    border: 1px solid #282E2D;
 	    border-radius: 50px;
 	    padding-left: 15px;
 	}
@@ -39,7 +63,7 @@
 	    height: 58px;
 	    display: flex;
 	    justify-content: center;
-	    border: 1px solid;
+	    border: 1px solid #282E2D;
 	    border-radius: 50px;
 	    color: white;
 	    background: #282E2D;
@@ -49,7 +73,7 @@
 	.searchContent .avatarAndName .name p {
 	    width: 250px;
 	    margin: 20px auto;
-	    border: 1px solid;
+	    border: 1px solid #282E2D;
 	    border-radius: 50px;
 	    height: 44px;
 	    display: flex;
@@ -57,25 +81,113 @@
 	    justify-content: center;
 	    font-size: 30px;
 	}
-	.searchContent.anketa  .infoBySearch .shownInfo p{
-    width: 30%;
-    max-width: 30%;
-}
+	.searchContent.anketa .infoBySearch .shownInfo p {
+	    width: 100%;
+	    max-width: 100%;
+	}
 
-.searchContent.anketa  .infoBySearch .buttonsForMore button {
-    width: 30%;
+	.searchContent.anketa  .infoBySearch .buttonsForMore button {
+	    width: 30%;
         max-width: 30%;
+	}
+	.backgroundedDiv.myContainer.aboutUs {
+	    max-width: 1000px;
+        width: 73%;
+
+	}
+	 .aboutContent img {
+	    float: right;
+	    padding: 0 0 10px 10px;
+	    max-width: 40%;
+	}
+	.contentInfo p  {
+		font-size: 15px
+	}
+	.homeSection .linksNumbered .item .text {
+	    padding-bottom: 19px;
+	    font-size: 12px;
+	}
+	.searchContent.anketa .customSelect , .searchContent.anketa .infoBySearch .shownInfo >input{
+	    width: 100%;
+	}
+	.plusButton.anketa img {
+	    cursor: pointer;
+	    width: 30px;
+	}
+	.modalSuccess .modalContent .successAndError {
+	    width: 80%;
+	    max-width: 1000px;
+	    margin: 0 auto;
+	    padding: 10px;
+	    background: white;
+	    justify-content: center;
+	    font-size: 13px;
+	    position: relative;
+	}
+	.infoBySearch.archive .nameAndArchiveItems .itemArchive{
+		height: 50px;
+	}
+	.infoBySearch.archive .nameAndArchiveItems> h3 {
+		font-size:  16px;
+	}
+	.infoBySearch.archive .nameAndArchiveItems .itemArchive p {
+	    font-size: 15px;
+	}
+	.tab-content .threePart , .searchContent.anketa .infoBySearch .shownInfo >input , .tab-content .twoPart{
+		width: 100%;
+	}
+	ul.tabs {
+	    width: 100%;
+    	margin-top: 25px;
+	}
+	.backgroundedDiv.newPet .tab-content .customSelect {
+		width: 100% !important;
+	}
+	.backgroundedDiv.newPet .searchContent.anketa .customSelect  {
+		width: 50%  ;
+	}
+	.backgroundedDiv.newPet2 .searchContent.anketa form .customSelect.avataraSelect{
+		width: 50% !important;
+	}
+	.steps .oneStep , .steps .twoStep {
+		height: 50px;
+    	width: 50px;
+        font-size: 24px;
+	}
+	.steps .line {
+	    width: 100px;
+	}
+	.tab-content .threePart input{
+	    padding: 0 20px;
+	}
+	  .backgroundedDiv.newPet2 .searchContent.anketa .customSelect {
+	  	width: 100%  !important;
+	  }
+	  .searchContent.profile .infoBySearch .shownInfo p {
+    width: 100%;
+    max-width: initial;
 }
+.searchContent .avatarAndName .avatar {
+    width: 150px;
+    height: 150px;}
 }
 @media  screen and (max-width: 1050px){
+	.searchContent.anketa .avatarAndName {
+  
+    margin-top: 20px;
+}
+	.homeSection .linksNumbered .item .text {
+	    padding-bottom: 15px;
+	    font-size: 12px;
+	}
+	.contentInfo p {
+	    font-size: 14px;
+	}
 	.homeSection .formForSearch form{
    	    width: 500px;
-   }
+    }
     .homeSection .linksNumbered .item .number {
 	    font-size: 60px;
-	}
-	.homeSection .linksNumbered {
-	    left: -100px;
 	}
 	.notLinkButton {
 	    width: 9px;
@@ -100,8 +212,7 @@
 	
 	.aboutContent {
 	    padding-left:  0px;
-	    height: 90%;
-	    overflow-y: auto;
+	     
         padding-right: 10px;
 	    padding-bottom: 50px;
 	}
@@ -109,24 +220,42 @@
 	    justify-content: flex-start;
 	}
 	.aboutContent img {
-    width: 300px;
+	    width: 300px;
+	}
+	.searchContent.anketa .infoBySearch .buttonsForMore button {
+	    width: 45%;
+	    max-width: 45%;
+	    margin: 2%;
+	}
+	.searchContent.anketa .infoBySearch .shownInfo, .searchContent.anketa .infoBySearch .buttonsForMore {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+	.searchContent.anketa .customSelect, .searchContent .infoBySearch .shownInfo p , .searchContent.anketa .infoBySearch .shownInfo >input{
+		margin: 7px;
+	}
+	.plusButton.anketa.flex, .buttonsForSave.anketa.flex {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	.buttonsForSave.anketa button {
+	    width: 100%;
+	    height: 50px;
+        margin: 10px 0;
 }
-
-
+.contactUs >h1 {
+    font-size: 30px;}
 }
 @media  screen and (max-width: 1000px) {
-	.homeSection.aboutUs .linksNumbered {
-	    width: 80%;
-
-	    left: 10%;
-	    text-align: center;
-	    display: flex;
-	    flex-direction: row;
-	    justify-content: center;
-	    bottom: 0;
-	    top: auto;
-	    height: max-content;
+	.searchContent.profile .infoBySearch .shownInfo p, .searchContent.profile .infoBySearch .buttonsForMore button {
+		width: 100%;
+		max-width: 100%;
 	}
+	.searchContent .infoBySearch {
+	    margin-top: 0;
+	}
+	
    .menuPart .navigationPart ul {
 	  	display: flex;
 	    flex-wrap: wrap;
@@ -149,29 +278,11 @@
 	    margin-top: 0;
 	    height: 80%;
 	}
-	.homeSection .linksNumbered {
-	    width: 80%;
-    left: 10%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-    top: auto;
-    height: max-content;
-	}
+
 	.homeSection .linksNumbered .item .text {
 		display: none;
 	}
-	.notLinkButton {
-	    width: 38px;
-	    height: 10px;
-	}
-	.homeSection .linksNumbered .item {
-	    margin-bottom: 16px;
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: flex-end;
-	}
+	
 	.fullContent{
 		background: url(../images/mobile/dogmobile.png) no-repeat;
 	    background-size: cover;
@@ -195,8 +306,155 @@
 	    width: 80%;
 	    max-width: 80%
 	}
+	.backgroundedDiv.myContainer.aboutUs {
+	    max-width: 1000px;
+	    width: 80%;
+	}
+	.contactUs .info>div p {
+	    font-size: 16px;
+	}
+	.contactUs form input {
+		width: 100%;
+	}
+	.titleAndTabs > p {
+	    font-size: 17px;
+	}
+	.backgroundedDiv.newPet .searchContent.anketa .customSelect {
+	    width: 60%;
+	}
+	.titleAndTabs {
+		margin-bottom: 10px;
+	}
+	ul.tabs li {
+		    height: 30px;
+    font-size: 15px;
+    background: white;
+    width: 70px
+	}
+	.searchContent.anketa .avatarAndName .avatar {
+    width: 70px;
+    height: 70px;
 }
-@media  screen and (max-width: 700px)  {
+}
+@media  screen and (max-width: 720px)  {
+	.searchContent.search .infoBySearch .shownInfo p, .searchContent.search .infoBySearch .buttonsForMore button {
+    width: 100%;
+    max-width:100%;
+}
+	ul.tabs li {
+    height: 30px;
+    font-size: 13px;
+    background: white;
+    width: 60px;
+}
+.backgroundedDiv.newPet2 .searchContent.anketa form .customSelect.avataraSelect{
+		width: 100% !important;
+	}
+.buttonsForMore.newCHK button {
+    width: 100%;
+        margin: 12px 0;
+    }
+	.backgroundedDiv.newPet .searchContent.anketa .customSelect {
+	    width: 100%;
+	}
+
+	.steps .oneStep, .steps .twoStep {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+}
+.tab-content {
+  
+    padding: 0;
+}
+.backgroundedDiv.newPet .searchContent.anketa .avatarAndName .name p, 
+.backgroundedDiv.newPet2 .searchContent.anketa .avatarAndName .name p  ,
+.backgroundedDiv.newPetTaparogh .searchContent.anketa .avatarAndName .name p {
+    font-size: 20px;
+}
+	.homeSection .linksNumbered {
+	    width: 80%;
+    left: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    top: auto;
+    height: max-content;
+	}
+	.titleAndTabs > p {
+    font-size: 13px;
+}
+	.contactUs >h1 {
+	    font-size: 24px;
+	}
+		.infoBySearch.archive .nameAndArchiveItems> h3 {
+		font-size:  14px;
+	}
+		.searchContent.anketa .avatarAndName {
+	    
+	    margin-top: 30px;
+	}
+	.contactUs .info>div{
+	width: 100%;
+	    display: flex;
+}
+.contactUs .info>div img {
+    margin-bottom: 20px;
+    height: auto;
+    width: 25px;
+    margin-right: 20px;
+}
+.contactUs .info {
+	margin-bottom: 20px;
+}
+		.searchContent.anketa .avatarAndName .avatar {
+	    width: 80px;
+	    height: 80px;
+	}
+	.searchContent.anketa .avatarAndName .name p {
+		    font-size: 25px;
+	}
+	.searchContent.anketa .infoBySearch .buttonsForMore button {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto 10px;
+}
+	.aboutContent img {
+    width: 90%;
+    max-width: 90%;
+    float: none;
+}
+	.homeSection.aboutUs .linksNumbered {
+	   width: 100%;
+	    left: 0;
+	    right: 0;
+	    background: white;
+	    text-align: center;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    bottom: 0;
+	    top: auto;
+	    height: max-content;
+        z-index: 111;
+
+	}
+	.homeSection .linksNumbered .item.active {
+    margin-bottom: 0px !important; 
+     
+}
+	.homeSection .linksNumbered .item {
+	    margin-bottom: 16px !important;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+	}
+	.notLinkButton {
+	    width: 38px;
+	    height: 10px;
+	}
 	
 	.customSelect {
 	    width: 100%;
@@ -245,9 +503,7 @@
 	.popupForLogin .centerDiv .border {
 	    width: 55%;
 	}
-	.aboutContent img {
-	    width: 250px;
-	}
+	 
 	.contentInfo p {
 		font-size:  14px;
 	}
@@ -256,10 +512,28 @@
 	    height: 121px;
     }
     .searchContent .infoBySearch {
-	    margin-top: 30px;
+	    margin-top:  0px;
 	}
+	.searchContent.anketa .avatarAndName {
+    margin-top: 60px;
+}
+}
+@media  screen and (max-width: 600px) {
+	.aboutContent img {
+    width: 100%;
+    max-width: 100%;
+}
+.backgroundedDiv.myContainer.aboutUs {
+    max-width: 1000px;
+    width: 95%;
+}
 }
 @media  screen and (max-width: 500px) {
+	.searchContent .infoBySearch .shownInfo p {
+    font-size: 12px;
+}
+	.contactUs >h1 {
+    font-size: 20px;}
 	.homeSection .formForSearch form {
 	    width: 100%;
 	    margin: 20px auto;
@@ -271,9 +545,7 @@
 	    border-radius: 20px;
 	    padding: 10px;
 	}
-	.aboutContent img {
-	    width: 200px;
-	}
+ 
 	.searchContent .infoBySearch .shownInfo p, .searchContent .infoBySearch .buttonsForMore button {
 	    width: 100%;
 	    max-width: 100%;
@@ -282,6 +554,7 @@
 		font-size: 26px;
 	}
 	.backgroundedDiv {
-    padding: 0;
+    padding: 20px;
 }
+
 }

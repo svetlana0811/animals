@@ -50,7 +50,7 @@ html * {
 }
 body {
   
-    font-family: MontserratarmRegular;
+    font-family: MontserratarmRegular , sans-serif ;
 } 
 ul ,  li {
     list-style: none;
@@ -62,13 +62,24 @@ a {
 }  
  
 .myContainer {
-    width: 90%;
-    max-width: 1633px;
+    width: 80%;
+    max-width: 1122px;
     margin: 0 auto;
+}
+  .fullContent.home {
+    height: 100vh;
+  }
+ .fullContent.home .backgroundedDiv {
+    height: 90vh;
+    max-width: 1689px;
+    width: 87%;
+}
+.contactUs form button p {
+  margin: 0 auto;
 }
   .fullContent {
     width: 100%;
-    height: 100vh;
+    
     background: url(../images/dog.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -123,11 +134,12 @@ a {
   }
   .menuPart .navigationPart ul li:last-child{
     margin-right: 0px;
+
   }
   .menuPart .navigationPart ul li.logInButton{
     width: 182px;
     text-align: center;
-    border: 1px solid;
+    border: 1px solid white;
     border-radius: 30px;
     font-size: 16px;
     display: flex;
@@ -144,9 +156,14 @@ a {
     margin-top: 150px;
   }
   .homeSection .linksNumbered{
-    position: absolute;
-    left: -120px;
-    top: 0;
+       position: fixed;
+    left: 40px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 25%;
+    width: 20%;
     color: white;
   }
   .homeSection .linksNumbered .item.active{
@@ -178,11 +195,11 @@ a {
     position: relative;
   }
   .homeSection .linksNumbered .item .text span {
-    border-bottom: 5px solid;
+    border-bottom: 5px solid  ;
     padding-bottom: 5px;
   }
   .homeSection .linksNumbered .item .text{
-    padding-bottom: 27px;
+    padding-bottom: 24px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -233,10 +250,10 @@ a {
     right: -11px;
     width: 0;
     height: 0;
-    top: 22px;
-    border-top: solid 8px #242424;
-    border-left: solid 8px transparent;
-    border-right: solid 8px transparent;
+    top: 25px;
+    border-top: solid  8px #282E2D;
+    border-left: solid   8px transparent;
+    border-right: solid  8px transparent;
 }
 .searchInput span{
     cursor: pointer;
@@ -266,6 +283,7 @@ a {
     position: relative;
     background: white;
     color: black;
+    height: 60px;
     border-radius: 50px;
     padding: 0 44px;
   }
@@ -311,7 +329,7 @@ position: fixed;
     padding: 30px;
     height: 80vh;
     max-height: 500px;
-    background: rgba(40, 46, 45, 0.95);
+    background: rgba(40, 46, 45);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -339,7 +357,7 @@ position: fixed;
   }
   .popupForLogin .centerDiv .border{
     width: 65%;
-    border: 0.5px solid;
+    border: 0.5px solid #282E2D;
     height: 0;
     margin-top: 10px;
   }
@@ -353,7 +371,7 @@ position: fixed;
     height: 55px;
     border-radius: 30px;
     background: #262C2B;
-    border: 1px solid;
+    border: 1px solid #282E2D;
     color: white;
     cursor: pointer;
     font-size: 18px;
@@ -375,7 +393,7 @@ position: fixed;
     display: none;
   }
   .loggedIn a{
-     border-bottom: 1px solid;
+     border-bottom: 1px solid #282E2D;
     height: max-content;
     margin: 1px 0px 3px 5px;
   }
@@ -399,17 +417,19 @@ position: fixed;
     background: transparent;
 }
 .homeSection.aboutUs {
+    height: max-content;
     margin-top: 0;
-        height: 100%;
+    padding-bottom: 100px;
 }
 .homeSection.aboutUs .linksNumbered {
-       color: black; 
-           left: -120px;
+    color: black;
+    left: 40px;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     top: 25%;
+    width: 15%;
 }
 .homeSection.aboutUs  .notLinkButton {
        background: black; 
@@ -425,6 +445,7 @@ position: fixed;
 .aboutContent img{
     float: right;
     padding:0 0 10px 10px;
+        max-width: 50%;
 }
 .hasNotLoggedIn {
     text-align: center;
@@ -432,9 +453,14 @@ position: fixed;
     justify-content: center;
     color: white;
 }
+.hasNotLoggedIn img{
+    height: max-content
+
+}
 .hasNotLoggedIn p {
     padding-top: 5px;
     padding-left: 10px;
+        margin-bottom: 20px;
 }
 
 /*search*/
@@ -466,14 +492,18 @@ position: fixed;
     width: 30%;
     max-width: 300px;
     margin: 20px auto;
-    border: 1px solid;
+    border: 1px solid #282E2D;
     border-radius: 50px;
     height: 54px;
     display: flex;
+    background: white;
     flex-direction: column;
     justify-content: center;
     font-size: 35px;
 }
+  .searchContent.anketa .infoBySearch .shownInfo >input::placeholder {
+    font-size: 16px;
+  }
 .searchContent .infoBySearch{
     margin-top: 90px;
 }
@@ -493,8 +523,9 @@ position: fixed;
     margin: 22px;
     height: 68px;
     display: flex;
+ 
     justify-content: center;
-    border: 1px solid;
+    border: 1px solid #282E2D;
     border-radius: 50px;
     color: white;
     background: #282E2D;
@@ -516,13 +547,13 @@ position: fixed;
 .searchContent .infoBySearch .shownInfo p{
     width: 30%;
     max-width: 300px;
-    margin: 22px;
+        margin: 1%;
     background: white;
     height: 68px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid;
+    border: 1px solid #282E2D;
     border-radius: 50px;
     padding-left: 20px;
 }
@@ -536,16 +567,35 @@ position: fixed;
 
         max-width: 1280px;
 }
-.popupForLogin.tesnelXnamoghin .centerDiv .loginInputs {
+.popupForLogin  .centerDiv .loginInputs {
        width: 50%;
-    margin: 0px auto;
+    margin:20px auto;
     padding: 10px;
 }
-.popupForLogin.tesnelXnamoghin .centerDiv .title {
-    width: 50%;
+.popupForLogin .centerDiv .title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 20px;
+    height: 0.5em;
+    border-top: 1px solid   white;
+    z-index: 0;
+}
+.popupForLogin .centerDiv .title {
+    width: 100%;
+        position: relative;
+}
+.popupForLogin .centerDiv .title span{
+        background: rgba(40, 46, 45);
+    z-index: 1;
+    position: absolute;
+    top: -30px;
+    padding: 6px;
 }
 .popupForLogin.tesnelXnamoghin .centerDiv .border {
     width: 45%;
+    display: none;
 }
 .popupForLogin.tesnelXnamoghin .centerDiv .loginButton {
     
@@ -570,15 +620,10 @@ position: fixed;
 }
 .popupForLogin.tesnelGtnveluvayr .centerDiv .loginInputs {
        width: 50%;
-    margin: 0px auto;
+    margin: 20px auto;
     padding: 10px;
 }
-.popupForLogin.tesnelGtnveluvayr .centerDiv .title {
-    width: 50%;
-}
-.popupForLogin.tesnelGtnveluvayr .centerDiv .border {
-    width: 45%;
-}
+ 
 .popupForLogin.tesnelGtnveluvayr .centerDiv .loginButton {
     width: 100%;
 }
@@ -593,11 +638,13 @@ position: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-left: 100px;
-}
+ }
 .searchContent.anketa .avatarAndName .name {
     width: max-content;
     text-align: center;
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .searchContent.anketa .avatarAndName .name p {
     width: max-content;
@@ -609,7 +656,7 @@ position: fixed;
     flex-direction: column;
     justify-content: center;
     font-size: 30px;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #282E2D;
 }
 .searchContent.anketa  .infoBySearch .shownInfo p{
     width: 30%;
@@ -618,7 +665,10 @@ position: fixed;
 .searchContent.anketa  .infoBySearch .shownInfo , .searchContent.anketa .infoBySearch .buttonsForMore{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+     justify-content: space-between;;
+}
+.searchContent.anketa .infoBySearch .buttonsForMore{
+     justify-content: flex-end;
 }
 .searchContent.anketa  .infoBySearch .buttonsForMore button {
     width: 30%;
@@ -628,40 +678,611 @@ position: fixed;
     width: 100px;
     height: 100px;
 }
-
 .searchContent.anketa  .customSelect{
-        width: 30%;
-        margin: 12px;
+    width: 30%;
+    margin: 12px;
+    height: 53px;
 }
 .searchContent.anketa  .customSelect .hidden{
-        display: none;
+    display: none;
 }
 .searchContent.anketa .infoBySearch .shownInfo  .customSelect p{
-      width: 100%;
+    width: 100%;
     max-width: 100%;
     margin: 0
 }
 .searchContent.anketa .infoBySearch .shownInfo  .customSelect .selectText{
-        padding: 0 0;
+    padding: 0 0;
 }
 .searchContent.anketa .infoBySearch .shownInfo .customSelect .selectText> p:after{
-    right: 9px;
+    right: 15px;
 }
 .searchContent.anketa .infoBySearch .shownInfo .customSelect ul li {
     width: 100%;
     padding-left: 20px;
 }
 .searchContent.anketa .infoBySearch .shownInfo .customSelect ul li.selected:before {
-       left: 5px;
+    left: 5px;
 }
 .searchContent.anketa .infoBySearch .shownInfo >input {
      width: 30%;
     margin: 12px;
-    height: 48px;
+    height: 68px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid;
+    border: 1px solid #282E2D;
     border-radius: 50px;
     padding-left: 15px;
+}
+.searchContent.anketa{
+    justify-content: flex-start;
+}
+/*.searchContent .infoBySearch.anketa .anketas{
+    max-height: 80%;
+    overflow-y: auto;
+}*/
+.searchContent .infoBySearch.anketa  {
+    /*height: 80%;*/
+    margin-top: 30px;
+    /*overflow-y: auto;*/
+    padding-bottom: 30px;
+}
+.plusButton.anketa img{
+    cursor: pointer;
+    width: 40px;
+}
+.plusButton.anketa {
+    display: none;
+    padding-left: 10px;
+    margin-top: 20px;
+
+}
+.buttonsForSave.anketa {
+    display: none;
+    justify-content: flex-end;
+}
+.buttonsForSave.anketa button{
+    border: 1px solid #282E2D  ;
+    width: 179px;
+    background: white;
+    height: 60px;
+    border-radius: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.buttonsForSave.anketa button:last-child{
+    background: #282E2D;
+    color: white
+}
+.plusButton.anketa.flex , .buttonsForSave.anketa.flex {
+    display: flex;
+}
+.modalSuccess {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+
+.modalSuccess .modalContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(40, 46, 45, 0.08);
+}
+.modalSuccess .modalContent .successAndError.flex {
+    display: flex;
+}
+.modalSuccess .modalContent .successAndError{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    position: relative;
+    display: none;
+}
+.modalSuccess .modalContent .successAndError img{
+    margin-right: 10px;
+}
+.modalSuccess .modalContent .successAndError span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/*archive*/
+
+.infoBySearch.archive {
+    margin-top: 20px;
+ }
+.infoBySearch.archive .nameAndArchiveItems{
+
+}
+.infoBySearch.archive .nameAndArchiveItems .itemArchive{
+width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    margin-bottom: 20px;
+    border: 1px solid #282E2D  ;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+.infoBySearch.archive .nameAndArchiveItems .itemArchive p{
+color: #282E2D;
+    font-size: 18px;
+}
+.infoBySearch.archive .nameAndArchiveItems> h3{
+    color: #282E2D;
+    margin: 20px 0;
+}
+.infoBySearch.archive .nameAndArchiveItems> h3 span{
+    margin-right: 3px;
+}
+.infoBySearch.archive .searchForm  {
+    
+}
+.infoBySearch.archive.searchListing .searchForm .form .inputForSearchArchive {
+    height: 53px;
+}
+.infoBySearch.archive.searchListing .searchForm .form .customSelect {
+    margin-top: 25px;
+}
+.infoBySearch.archive.searchListing .searchForm .form .customSelect .selectText {
+    border: 1px solid #282E2D;
+}
+.infoBySearch.archive .searchForm .form .inputForSearchArchive span img {
+    width: 20px;
+}
+.infoBySearch.archive.searchListing .searchForm .form{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ 
+.infoBySearch.archive .searchForm .form .inputForSearchArchive span {
+        cursor: pointer;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.infoBySearch.archive .searchForm .form .inputForSearchArchive {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid #282E2D  ;
+    border-radius: 50px;
+    padding: 8px 30px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.infoBySearch.archive .searchForm .form .inputForSearchArchive input{
+    height: 100%;
+    width: 90%;
+    color: #656D6B;
+    border: none;
+}
+.pagination {
+width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pagination p{
+    margin: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+ 
+.pagination p.active{
+    background: #282E2D;
+    color: white;
+    
+}
+.popupForLogin.location {
+    
+}
+.popupForLogin.location .popupContent{
+
+}
+.popupForLogin.location .popupContent .centerDiv{
+    max-width: 1400px;
+    border-radius: 10px;
+}
+.popupForLogin.location .popupContent .centerDiv .locationTitle{
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+.popupForLogin.location .popupContent .centerDiv   .locationInfo{
+    width: 100%;
+    height: 400px;
+} 
+.popupForLogin.location .popupContent .centerDiv   .locationInfo iframe{
+    width: 100%;
+    height: 100%;
+} 
+
+/*profile*/
+.searchContent.profile .infoBySearch .shownInfo {
+    justify-content: flex-end;
+}
+.searchContent.profile .infoBySearch .shownInfo p {
+    width: 48%;
+    max-width: initial;
+}
+.searchContent.profile .infoBySearch .buttonsForMore{
+    justify-content: flex-end;
+}
+.searchContent.profile .infoBySearch {
+    margin-top: 20px;
+}
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.tabs li{
+    background: none;
+    color: #222;
+       display: inline-block;
+    padding: 5px;
+    height: 34px;
+    background: white;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #282E2D ;
+    border-radius: 30px;
+        cursor: pointer;
+}
+
+ul.tabs li.current{ 
+    color: #222;
+}
+
+.tab-content{
+    display: none; 
+    padding: 15px;
+}
+
+.tab-content.current{
+    display: flex;
+}
+.titleAndTabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.titleAndTabs > p{
+        font-size: 22px;
+}
+.newPetcontent {
+
+}
+.newPetcontent .titleAndLangs{
+    
+}
+.steps {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+.steps .twoStep{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #282E2D;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+        background: white;
+}
+.steps .line{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.steps .line p{
+    border: 1px solid #282E2D;
+}
+.steps .oneStep{
+        height: 60px;
+    width: 60px;
+        background: white;
+    border: 1px solid #282E2D;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+}
+.tab-content {
+ 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.newPetcontent .customSelect .selectText{
+    border: 1px solid #282E2D  ;
+}
+.tab-content .onePart{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.tab-content .onePart input{
+position: relative;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    padding: 0 44px;
+    height: 60px;
+    border: 1px solid #282E2D;
+    width: 100%;
+}
+.tab-content .twoPart{
+ width: 48%;
+  margin-bottom: 15px;
+}
+.tab-content .twoPart input{
+position: relative;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    padding: 0 44px;
+    height: 60px;
+    border: 1px solid #282E2D;
+    width: 100%;
+}
+.tab-content   .customSelect {
+        width: 48% !important;
+    margin: 0 !important;
+     margin-bottom: 15px !important;
+}
+.tab-content .threePart{
+    width: 32%;
+     margin-bottom: 15px;
+}
+.tab-content .threePart input{
+    position: relative;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    padding: 0 44px;
+    height: 60px;
+    border: 1px solid #282E2D;
+    width: 100%;
+}
+.buttonsForMore.newCHK {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.buttonsForMore.newCHK button:first-child{
+    color:  #282E2D;
+    background: white;
+    border: 1px solid #282E2D  ;
+}
+.buttonsForMore.newCHK button{
+    width: 200px; 
+    margin: 12px;
+    height: 51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #282E2D;
+    border-radius: 50px;
+    color: white;
+    background: #282E2D;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+} 
+.newPetcontent2 .steps .oneStep{
+        background: #282E2D;
+}
+.newPetcontent2 .steps .oneStep img{
+           width: max-content;
+    margin: 0 auto;
+}
+.newPetcontent2 .tab-content .customSelect {
+        width: 33% !important;
+    margin: 0 !important;
+    margin-bottom: 15px !important;
+}
+.tab-content .threePart.fileUpload {
+    display: flex;
+    position: relative;
+}
+label {
+        position: absolute;
+    right: 0;
+    top: 5px;
+        border-radius: 50px;
+}
+.modalNeedToComplite p{
+    margin: 0 auto
+}
+.modalNeedToComplite {
+    position: fixed;
+    top: 25px;
+    width: 40%;
+    left: 30%;
+    background: #282E2D;
+    color: white;
+    border-radius: 13px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    display: none;
+}
+.modalNeedToComplite.show {
+     display: flex;
+}
+
+/*contactUs*/
+
+.contactUs >h1{
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.contactUs .info{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+}
+.contactUs .info>div{
+
+}
+.contactUs .info>div p{
+    font-size: 20px;
+}
+.contactUs .info>div img{
+    margin-bottom: 20px;
+    height: 35px;
+}
+.contactUs form{
+display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contactUs form input[type="email"]{
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    padding: 0 44px;
+    height: 60px;
+    border: 1px solid #282E2D;
+     
+}
+.contactUs form input{
+    width: 48%;
+    position: relative;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    padding: 0 44px;
+    height: 60px;
+    border: 1px solid #282E2D;
+ 
+    margin-bottom: 15px;
+}
+.contactUs form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    padding: 10px 44px;
+    height: 60px;
+        resize: none;
+    border: 1px solid #282E2D;
+     
+}
+.contactUs form button{
+  width: 200px;
+    margin: 12px auto;
+    height: 51px;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    border: 1px solid #282E2D;
+    border-radius: 50px;
+    color: white;
+    background: #282E2D;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.contactUs .socLinks{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.contactUs .socLinks a{
+    margin: 10px;
+}
+.contactUs .socLinks a img{
+
+}
+.myContainer.contactUs {
+        width: 70%;
+}
+.copyRight {
+    display: flex;
+    justify-content: space-between;
+    background: #282E2D;
+    color: white;
+    padding: 5px 50px;
+        font-size: 13px;
+        margin-top: 50px;
+}
+.copyRight .itrPART{
+
+}
+.copyRight .itrPART p{
+
+}
+.copyRight .itrPART p img{
+    width: 100px
+}
+.copyRight .itrPART p span{
+
+}
+.copyRight .copyrightPart{
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.copyRight .copyrightPart p{
+    
+}
+.homeSection.aboutUs.contactUs {
+    margin-top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.backgroundedDiv.myContainer.aboutUs {
+    max-width: 1370px;
+}
+.backgroundedDiv.myContainer.aboutUs .aboutContent {
+    padding-left: 20px;
 }
